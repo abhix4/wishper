@@ -18,7 +18,10 @@ export const supabase = createClient(
 export const login = async () => {
   try {
     const {data , error} = await supabase.auth.signInWithOAuth({
-      provider:"google"
+      provider:"google",
+      options: {
+        redirectTo: process.env.REACT_APP_REDIRECT_URL // <- Define this in your .env file
+      }
     })
     console.log(data);
     console.log(error)
