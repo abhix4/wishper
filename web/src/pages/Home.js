@@ -181,8 +181,13 @@ const Home = () => {
 
 
       {/* Footer */}
-      <div className="absolute bottom-0 w-full py-8 z-10">
-        <div className="max-w-2xl mx-auto flex justify-center items-center gap-12 opacity-50">
+      <div className="absolute bottom-0 w-full pt-12 z-10">
+      
+        <div className="max-w-2xl mx-auto flex justify-center items-center gap-4 opacity-50">
+              <img src="/peerlist.svg"
+          className="w-[180px] h-[160px] "
+          />
+          <div className="h-[60px] w-[1px] bg-black/20"></div>
           <div className="text-gray-600 text-sm">Trusted by thinkers worldwide</div>
         </div>
       </div>
