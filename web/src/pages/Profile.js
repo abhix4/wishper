@@ -47,6 +47,7 @@ function Profile() {
                 <Input 
                   defaultValue={userData.name}
                   className="bg-white/50"
+                  disabled
                 />
               </div>
               
@@ -55,6 +56,7 @@ function Profile() {
                 <Textarea 
                   value={bio}
                   onChange={(e) => setBio(e.target.value)}
+                  disabled
                   className="bg-white/50 min-h-[100px] resize-none"
                 />
               </div>

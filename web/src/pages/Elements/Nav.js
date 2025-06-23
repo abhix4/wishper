@@ -43,7 +43,7 @@ function Nav() {
 
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-sm bg-white/60">
-      <div className="max-w-6xl mx-auto px-6 py-4">
+      <div className="max-w-4xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div
@@ -59,24 +59,39 @@ function Nav() {
           <div className="flex items-center gap-2 md:gap-6">
             <div> <button className="text-[14px]  hidden md:block md:text-base text-gray-600 hover:text-gray-800" onClick={() => navigate("/features")}>Features</button></div>
             {isLogged && (
-              <Dialog>
-                <DialogTrigger>
-                  <Button 
+
+                <DropdownMenu>
+                <DropdownMenuTrigger>
+                <Button 
                     variant="ghost" 
                     className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50  items-center"
                   >
-                    Whisper <span className="text-[10px] rounded-xl bg-purple-600 px-1 text-white">new</span>
+                    Whisper <span className="text-[10px] rounded-xl bg-purple-600 px-2 text-white">new</span>
                   </Button>
-                </DialogTrigger>
-                <DialogContent className="bg-white/95 backdrop-blur-md border-none shadow-xl max-w-xs md:max-w-lg w-full font-Poppins">
-                  <DialogHeader>
-                    <DialogTitle className="text-xl font-medium text-gray-800">
-                    Get Wishpers
-                    </DialogTitle>
-                  </DialogHeader>
-                 <Wishper/>
-                </DialogContent>
-              </Dialog>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="bg-white/70 backdrop-blur-md border-none shadow-lg font-Poppins max-w-lg">
+                  <Wishper/>
+                </DropdownMenuContent>
+              </DropdownMenu>
+
+              // <Dialog>
+              //   <DialogTrigger>
+              //     <Button 
+              //       variant="ghost" 
+              //       className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50  items-center"
+              //     >
+              //       Whisper <span className="text-[10px] rounded-xl bg-purple-600 px-1 text-white">new</span>
+              //     </Button>
+              //   </DialogTrigger>
+              //   <DialogContent className="bg-white/95 backdrop-blur-md border-none shadow-xl max-w-xs md:max-w-lg w-full font-Poppins">
+              //     <DialogHeader>
+              //       <DialogTitle className="text-xl font-medium text-gray-800">
+              //       Get Wishpers
+              //       </DialogTitle>
+              //     </DialogHeader>
+              //    <Wishper/>
+              //   </DialogContent>
+              // </Dialog>
             )}
 
             {isLogged ? (

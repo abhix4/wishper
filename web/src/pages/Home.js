@@ -74,7 +74,7 @@ const Home = () => {
          <h1 className="text-4xl md:text-6xl font-serif text-gray-800 font-Playwrite">
             Find your clarity
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 font-light h-12 pt-8  ">
+          <p className="text-xl md:text-xl text-gray-600 font-light h-12 pt-8  ">
             <Typewriter
               options={{
                 strings: ["Unload Your Mind", "Embrace Peace", "Think Freely"],
@@ -87,14 +87,14 @@ const Home = () => {
          </div>
 
           {isLogged ? (
-            <div className="mt-16 space-y-4 max-w-2xl mx-auto ">
+            <div className="mt-16 space-y-4 max-w-lg mx-auto ">
               <textarea
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 className="w-full h-24 p-4 rounded-xl shadow-lg bg-white/90 
                          backdrop-blur-sm text-gray-800 resize-none transition-all
                          focus:outline-none focus:ring-2 focus:ring-purple-200
-                         placeholder:text-gray-400"
+                         placeholder:text-gray-400 text-sm"
                 placeholder="What's on your mind?"
               />
               <div className="flex items-center justify-between px-2 text-[14px] sm:text-base">
@@ -104,7 +104,8 @@ const Home = () => {
                 </div> */}
                 <Button
                   onClick={createThought}
-                  className="bg-gray-900 hover:bg-gray-800 text-white px-6 text-[14px] sm:text-base sm:px-8 mx-auto"
+                  className="bg-gray-900 hover:bg-gray-800 text-white px-6 sm:text-sm sm:px-8 mx-auto text-xs"
+                  
                 >
                   Save
                 </Button>
@@ -181,14 +182,16 @@ const Home = () => {
 
 
       {/* Footer */}
-      <div className="absolute bottom-0 w-full pt-12 z-10">
+      <div className="absolute bottom-0 w-full py-8 md:pt-12 z-10">
       
-        <div className="max-w-2xl mx-auto flex justify-center items-center gap-4 opacity-50">
-              <img src="/peerlist.svg"
-          className="w-[180px] h-[160px] "
+        <div className="max-w-2xl mx-auto flex  flex-col md:flex-row justify-center items-center gap-0 md:gap-4 opacity-50">
+             <a href="https://peerlist.io/scroll/post/ACTHNN69JKNOQDD8E3PQKBKARP8RGN">
+               <img src="/peerlist.svg"
+          className="w-[100px] h-[80px] md:w-[140px] md:h-[120px] "
           />
-          <div className="h-[60px] w-[1px] bg-black/20"></div>
-          <div className="text-gray-600 text-sm">Trusted by thinkers worldwide</div>
+             </a>
+          <div className="h-[40px] w-[1px] bg-black/20 hidden md:block"></div>
+          <div className="text-gray-600 text-xs">Trusted by thinkers worldwide</div>
         </div>
       </div>
     </div>

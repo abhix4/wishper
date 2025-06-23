@@ -97,7 +97,7 @@ export default function Wishper() {
   }, [messages]);
 
   return (
-    <div className="mt-10 border border-black/10 rounded  ">
+    <div className=" border border-black/10 rounded ">
      
       <div className="h-80 overflow-y-auto  p-4 space-y-2 rounded  ">
         {messages.length > 0 ? messages.map((msg, idx) => (
