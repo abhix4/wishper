@@ -80,7 +80,7 @@ function ThoughtCard({ time, content, id }) {
 
   return (
     <Card className="group relative bg-white/95 backdrop-blur-sm border-none shadow-md 
-                    hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    hover:shadow-xl transition-all duration-300 overflow-hidden w-full">
       {/* Top Gradient Bar */}
      
 

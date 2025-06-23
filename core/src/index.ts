@@ -1,6 +1,5 @@
 
 import { Hono } from "hono";
-import { embeddQueryThoughts, embeddThoughts, getRefinedQueryResult } from "./controllers/ai-shit";
 import { addThoughts, deleteThought, editThought, getThoughts } from "./controllers/thought";
 import { logger } from "hono/logger";
 import { chat } from "./controllers/chat-ai";

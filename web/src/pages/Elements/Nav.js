@@ -17,7 +17,7 @@ import {
 } from "../../components/ui/dialog";
 import { Button } from "../../components/ui/button";
 import { useNavigate } from "react-router-dom";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState} from "recoil";
 import { isThoughtUpdated, loginState, userState } from "../../Atom";
 import { supabase } from "../../supabase/auth";
 import { toast } from 'react-hot-toast';
@@ -27,8 +27,7 @@ function Nav() {
   const navigate = useNavigate();
   const [userData, setUserData] = useRecoilState(userState);
   const [isLogged, setIsLogged] = useRecoilState(loginState);
-  const [content, setContent] = useState("");
-  const [isUpdated, setIsUpdated] = useRecoilState(isThoughtUpdated);
+
  
 
   const logout = async () => {
@@ -58,13 +57,13 @@ function Nav() {
 
           {/* Right Side Menu */}
           <div className="flex items-center gap-2 md:gap-6">
-            <div> <button className="text-[14px] md:text-base text-gray-600 hover:text-gray-800" onClick={() => navigate("/features")}>Features</button></div>
+            <div> <button className="text-[14px]  hidden md:block md:text-base text-gray-600 hover:text-gray-800" onClick={() => navigate("/features")}>Features</button></div>
             {isLogged && (
               <Dialog>
                 <DialogTrigger>
                   <Button 
                     variant="ghost" 
-                    className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50 hidden md:block items-center"
+                    className="text-gray-700 hover:text-gray-900 hover:bg-gray-100/50  items-center"
                   >
                     Whisper <span className="text-[10px] rounded-xl bg-purple-600 px-1 text-white">new</span>
                   </Button>
