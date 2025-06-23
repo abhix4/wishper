@@ -68,7 +68,7 @@ function Nav() {
                     Whisper <span className="text-[10px] rounded-xl bg-purple-600 px-1 text-white">new</span>
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="bg-white/95 backdrop-blur-md border-none shadow-xl max-w-lg w-full font-Poppins">
+                <DialogContent className="bg-white/95 backdrop-blur-md border-none shadow-xl max-w-xs md:max-w-lg w-full font-Poppins">
                   <DialogHeader>
                     <DialogTitle className="text-xl font-medium text-gray-800">
                     Get Wishpers

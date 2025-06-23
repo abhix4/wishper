@@ -127,7 +127,7 @@ function ThoughtCard({ time, content, id }) {
         </div>
 
         {/* Content Section */}
-        <div className="prose prose-gray max-w-none">
+        <div className="prose prose-gray max-w-none text-sm">
          {
           !isEditActive ?  <p className="text-gray-800 leading-relaxed whitespace-pre-wrap text-start">{content}</p>
           : 

@@ -93,7 +93,7 @@ function Vault() {
           </div>
         ) : (
           <ScrollArea className="h-[calc(100vh-300px)] pr-4 rounded-lg">
-            <div className="columns-1 md:columns-2 lg:columns-3 lg:space-x-5 space-y-4 py-2">
+            <div className="columns-1 md:columns-2 lg:columns-3 space-y-4 py-2 ">
               {thoughts.map((thought, index) => (
                 <motion.div
                   key={thought.id}
