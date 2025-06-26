@@ -185,7 +185,7 @@ const Home = () => {
       <div className="absolute bottom-0 w-full py-8 md:pt-12 z-10">
       
         <div className="max-w-2xl mx-auto flex  flex-col md:flex-row justify-center items-center gap-0 md:gap-4 opacity-50">
-             <a href="https://peerlist.io/scroll/post/ACTHNN69JKNOQDD8E3PQKBKARP8RGN">
+             <a href="https://peerlist.io/abhiifour/project/idea-vault">
                <img src="/peerlist.svg"
           className="w-[100px] h-[80px] md:w-[140px] md:h-[120px] "
           />
