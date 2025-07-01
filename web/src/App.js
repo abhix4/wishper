@@ -11,7 +11,7 @@ import Features from "./pages/Feature";
 
 function App() {
   return (
-    <div className="App  font-Poppins">
+    <div className="App font-Poppins">
       <Nav />
       <Routes>
         <Route path="/features" element={<Features />} />
