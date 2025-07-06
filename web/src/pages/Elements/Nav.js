@@ -57,7 +57,7 @@ function Nav() {
 
           {/* Right Side Menu */}
           <div className="flex items-center gap-2 md:gap-6">
-            <div> <button className="text-[14px]  hidden md:block md:text-base text-gray-600 hover:text-gray-800" onClick={() => navigate("/features")}>Features</button></div>
+            {/* <div> <button className="text-[14px]  hidden md:block md:text-base text-gray-600 hover:text-gray-800" onClick={() => navigate("/features")}>Features</button></div> */}
             {isLogged && (
 
                 <DropdownMenu>
