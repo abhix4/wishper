@@ -44,7 +44,7 @@ function Nav() {
   return (
     <nav className="fixed top-0 w-full z-50 backdrop-blur-sm bg-white/60">
       <div className="max-w-4xl mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
+        <div className={`flex ${isLogged ? "justify-between": "justify-center"} items-center`}>
           {/* Logo */}
           <div
             onClick={() => navigate("/")}

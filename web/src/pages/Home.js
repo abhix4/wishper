@@ -112,7 +112,7 @@ const Home = () => {
               </div>
             </div>
           ) : (
-            <div className="mt-16 w-[90%] sm:max-w-[450px] mx-auto bg-white/80 backdrop-blur-sm rounded-2xl  shadow-lg">
+            <div className="mt-16 w-[90%] sm:max-w-[400px] mx-auto bg-white/80 backdrop-blur-sm rounded-2xl  shadow-lg">
               <Login />
             </div>
           )}

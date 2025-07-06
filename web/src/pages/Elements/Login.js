@@ -16,9 +16,9 @@ function Login() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-4 py-6 px-2 md:py-10 md:px-8">
+    <div className="flex flex-col items-center gap-4 py-6 px-2 md:py-6 md:px-8">
       <div className="text-center space-y-4">
-        <h2 className="text-[16px] md:text-2xl font-medium text-gray-800">
+        <h2 className="text-[16px] md:text-xl font-medium text-gray-800">
           Ready to Start Your Journey?
         </h2>
     
@@ -27,7 +27,7 @@ function Login() {
       <Dialog>
         <DialogTrigger asChild>
           <Button
-            className="px-6 py-4  text-[14px] md:text-[18px] bg-purple-600 hover:bg-purple-700 
+            className="px-6 py-4  text-[14px] md:text-[16px] bg-purple-600 hover:bg-purple-700 
                      text-white shadow-lg transition-all duration-300 
                      rounded-xl"
           >
